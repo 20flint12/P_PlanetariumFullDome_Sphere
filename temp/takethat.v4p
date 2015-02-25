@@ -1,0 +1,249 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\takethat.v4p" bgcolor="14145495">
+   <BOUNDS height="10425" left="585" top="6225" type="Window" width="9660">
+   </BOUNDS>
+   <NODE id="15" nodename="QUAD (DX9)" managers="boygroup">
+   <BOUNDS height="0" left="5805" top="8565" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="14" nodename="Transform (Transform 2d)" managers="boygroup">
+   <BOUNDS height="0" left="5985" top="8025" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="TranslateX" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="15" dstpinname="Transform" srcnodeid="14" srcpinname="Transform Out">
+   </LINK>
+   <NODE id="13" nodename="Transform (Transform 3d)" managers="boygroup">
+   <BOUNDS height="0" left="3075" top="8025" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" visible="1" values="1.99000">
+   </PIN>
+   </NODE>
+   <NODE id="12" nodename="MapRange (Value)" managers="boygroup">
+   <BOUNDS height="0" left="6150" top="7605" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Source Center" slicecount="1" visible="1" values="0.5">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Center" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Destination Width" slicecount="1" values="3.20000000000001">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Mirror">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="TranslateX" srcnodeid="12" srcpinname="Output">
+   </LINK>
+   <NODE id="16" nodename="Boygroup (VVVV Client)" managers="boygroup">
+   <BOUNDS height="0" left="3240" top="7185" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="ClientID" visible="1">
+   </PIN>
+   <PIN pinname="ServerID" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" managers="boygroup">
+   <BOUNDS height="255" left="2625" top="5745" type="Node" width="3255">
+   </BOUNDS>
+   <BOUNDS height="720" left="2625" top="5745" type="Box" width="4425">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|select all nodes below and press STRG+B to boygroup them.&cr;&lf;make sure that vvvv is running in SERVER mode for this to work!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="10" nodename="IOBox (String)">
+   <BOUNDS height="255" left="360" top="150" type="Node" width="930">
+   </BOUNDS>
+   <BOUNDS height="540" left="360" top="150" type="Box" width="2220">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Take That|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="20">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="9" nodename="IOBox (String)">
+   <BOUNDS height="255" left="360" top="660" type="Node" width="2010">
+   </BOUNDS>
+   <BOUNDS height="255" left="360" top="660" type="Box" width="2175">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|a very basic boygroup setup|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="8" nodename="Map (Value)" managers="boygroup">
+   <BOUNDS height="0" left="3240" top="7605" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Destination Maximum" slicecount="1" values="-2">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Input" srcnodeid="16" srcpinname="ClientID">
+   </LINK>
+   <LINK dstnodeid="13" dstpinname="TranslateX" srcnodeid="8" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InAWindow" id="7" nodename="RENDERER (EX9)" managers="boygroup">
+   <BOUNDS height="0" left="3135" top="9360" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="4860" left="10665" top="375" type="Window" width="6120">
+   </BOUNDS>
+   <BOUNDS height="1800" left="3135" top="9360" type="Box" width="2400">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projection" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="7" dstpinname="Layers" srcnodeid="15" srcpinname="Layer">
+   <LINKPOINT x="3165" y="8805">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="5" nodename="Damper (Animation)" managers="boygroup">
+   <BOUNDS height="0" left="6300" top="7110" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="Cyclic" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="4" nodename="LFO (Animation)" managers="">
+   <BOUNDS height="0" left="6315" top="3555" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="Pause" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="8.8">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="5" dstpinname="Go To Position" srcnodeid="4" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="3" nodename="IOBOX (VALUE ADVANCED)" managers="boygroup">
+   <BOUNDS height="0" left="2850" top="6645" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="4125" top="12210" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="270" left="2850" top="6645" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="16" dstpinname="ServerID" srcnodeid="3" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)" managers="boygroup">
+   <BOUNDS height="270" left="3375" top="6645" type="Node" width="5115">
+   </BOUNDS>
+   <BOUNDS height="270" left="3375" top="6645" type="Box" width="5115">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|with the ServerID you can chose which client to simulate on the server|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="1" nodename="IOBox (String)">
+   <BOUNDS height="270" left="3615" top="720" type="Node" width="4080">
+   </BOUNDS>
+   <BOUNDS height="690" left="3615" top="720" type="Box" width="4080">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|read &cr;&lf;http://vvvv.org/tiki-index.php?page=Boygrouping&cr;&lf;for an introduction to synchronized dancing|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)">
+   <BOUNDS height="270" left="330" top="6660" type="Node" width="7980">
+   </BOUNDS>
+   <BOUNDS height="2445" left="330" top="6660" type="Box" width="2070">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|the ClientID is different on each client (starting from 0) according to the list indices of client IPs fed into Boygroup (Server VVVV).&cr;&lf;&cr;&lf;therefore each client will have a different view on the scene when the ClientID is used to translate the camera like shown here.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="12" dstpinname="Input" srcnodeid="5" srcpinname="Position Out">
+   </LINK>
+   <NODE systemname="Assets (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\Assets\Assets (EX9.Texture Source).v4p" nodename="Assets (EX9.Texture Source)" componentmode="Hidden" id="17" managers="boygroup">
+   <BOUNDS type="Node" left="7800" top="7095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="6">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Transform Out" dstnodeid="7" dstpinname="View">
+   </LINK>
+   <NODE systemname="myVideoStream" filename="..\..\patches\_subpatches\myVideoStream.v4p" nodename="..\..\patches\_subpatches\myVideoStream.v4p" componentmode="Hidden" id="19" managers="boygroup">
+   <BOUNDS type="Node" left="7740" top="7770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" values="|..\..\resources\1 сезон 5 серия (LIBERTY).avi|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Loop End Time" slicecount="1" values="1000">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="15" dstpinname="Texture">
+   </LINK>
+   </PATCH>

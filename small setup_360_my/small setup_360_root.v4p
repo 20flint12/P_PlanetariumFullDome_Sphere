@@ -1,0 +1,465 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\small setup_360_my\small setup_360_root.v4p" componentmode="InAWindow">
+   <BOUNDS height="13290" left="15255" top="2550" type="Window" width="12480">
+   </BOUNDS>
+   <NODE componentmode="Hidden" id="20" managers="boygroup" nodename="camera.v4p">
+   <BOUNDS height="270" left="3705" top="3330" type="Node" width="5160">
+   </BOUNDS>
+   <BOUNDS height="3600" left="3705" top="3330" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="13365" left="0" top="2835" type="Window" width="12480">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Cone Content" visible="1">
+   </PIN>
+   <PIN pinname="debug layers" visible="1">
+   </PIN>
+   <PIN pinname="view" visible="1">
+   </PIN>
+   <PIN pinname="projection" visible="1">
+   </PIN>
+   <PIN pinname="viewport" visible="1">
+   </PIN>
+   <PIN pinname="Record" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Cam Count" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Overlap" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Gamma" visible="1">
+   </PIN>
+   <PIN pinname="Do All" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ID" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="view2" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content2" visible="1">
+   </PIN>
+   <PIN pinname="view3" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content3" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content4" visible="1">
+   </PIN>
+   <PIN pinname="view4" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="3" managers="" nodename="overview.v4p" stayontop="1">
+   <PIN pinname="Show Virtual Scene" visible="1">
+   </PIN>
+   <PIN pinname="show cams" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="show projectors" visible="1">
+   </PIN>
+   <PIN pinname="Physical Setup" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="cams" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="projectors" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Virtual Scene" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS height="270" left="3870" top="10740" type="Node" width="3615">
+   </BOUNDS>
+   <BOUNDS height="3600" left="3870" top="10740" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="13365" left="2700" top="915" type="Window" width="12480">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Video" visible="1">
+   </PIN>
+   <PIN pinname="debug layers" visible="1">
+   </PIN>
+   <PIN pinname="Debug" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="3" dstpinname="Show Virtual Scene" hiddenwhenlocked="1" srcnodeid="2" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="2" managers="" nodename="IOBOX (VALUE ADVANCED)">
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <BOUNDS height="0" left="5040" top="9990" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="5816" top="3942" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="390" left="5040" top="9990" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Virtual Scene|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="0" managers="" nodename="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="0" left="7410" top="10020" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="6416" top="4542" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="390" left="7410" top="10020" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Projectors">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="3" dstpinname="show projectors" srcnodeid="0" srcpinname="Y Output Value">
+   </LINK>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
+   <LINK srcnodeid="20" srcpinname="debug layers" dstnodeid="3" dstpinname="projectors">
+   </LINK>
+   <NODE id="23" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <PIN pinname="viewport" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="270" left="4050" top="4455" width="1935">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4050" top="4455">
+   </BOUNDS>
+   <BOUNDS type="Window" height="13365" left="0" top="2835" width="12480">
+   </BOUNDS>
+   <PIN pinname="Slitscan Content" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="view" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Slitscan" visible="1">
+   </PIN>
+   <PIN pinname="Texture ViewPort Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="projection" dstnodeid="23" dstpinname="projection">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="view0" dstnodeid="23" dstpinname="view">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Cone Content0" dstnodeid="23" dstpinname="Cone Content">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="viewport" dstnodeid="23" dstpinname="Texture ViewPort Transform">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="24" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1350" top="10320" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1350" top="10320" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layers">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="25" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="645" top="2370" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="645" top="2370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="4" values=",,,">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mesh">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="23" dstpinname="Mesh">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="26" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1950" top="2385" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1950" top="2385" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Transform">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="23" dstpinname="Transform">
+   </LINK>
+   <NODE id="27" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <PIN pinname="viewport" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="270" left="4215" top="5310" width="1920">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4215" top="5310">
+   </BOUNDS>
+   <BOUNDS type="Window" height="13365" left="0" top="2835" width="12480">
+   </BOUNDS>
+   <PIN pinname="Slitscan Content" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="view" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Slitscan" visible="1">
+   </PIN>
+   <PIN pinname="Texture ViewPort Transform" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="projection" dstnodeid="27" dstpinname="projection">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6210" top="9960" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6210" top="9960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|show cams|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="3" dstpinname="show cams">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="27" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="27" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Layers" dstnodeid="3" dstpinname="Physical Setup">
+   </LINK>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="1350" top="9615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Layer" dstnodeid="24" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Layers" dstnodeid="29" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Layers" dstnodeid="29" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="view1" dstnodeid="27" dstpinname="view">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Cone Content1" dstnodeid="27" dstpinname="Cone Content">
+   </LINK>
+   <NODE id="30" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <PIN pinname="viewport" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="270" left="4710" top="6240" width="1920">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4710" top="6240">
+   </BOUNDS>
+   <BOUNDS type="Window" height="13365" left="0" top="2835" width="12480">
+   </BOUNDS>
+   <PIN pinname="Slitscan Content" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="view" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Slitscan" visible="1">
+   </PIN>
+   <PIN pinname="Texture ViewPort Transform" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mesh" visible="1" slicecount="4" values=",,,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="projection" dstnodeid="30" dstpinname="projection">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="view2" dstnodeid="30" dstpinname="view">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Cone Content2" dstnodeid="30" dstpinname="Cone Content">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="30" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="30" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Layers" dstnodeid="29" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="4545" top="8940" width="2655" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer Template Count" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Layers" dstnodeid="31" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Layers" dstnodeid="31" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Layers" dstnodeid="31" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Layer" dstnodeid="3" dstpinname="cams">
+   </LINK>
+   <NODE id="32" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <PIN pinname="viewport" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="270" left="5070" top="7080" width="1920">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5070" top="7080">
+   </BOUNDS>
+   <BOUNDS type="Window" height="13365" left="0" top="2835" width="12480">
+   </BOUNDS>
+   <PIN pinname="Slitscan Content" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="view" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Slitscan" visible="1">
+   </PIN>
+   <PIN pinname="Texture ViewPort Transform" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mesh" visible="1" slicecount="4" values=",,,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="projection" dstnodeid="32" dstpinname="projection">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Cone Content3" dstnodeid="32" dstpinname="Cone Content">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="view3" dstnodeid="32" dstpinname="view">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="32" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="32" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Layers" dstnodeid="31" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Layers" dstnodeid="29" dstpinname="Layer 4">
+   </LINK>
+   <NODE id="33" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <PIN pinname="viewport" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="270" left="5595" top="7740" width="1920">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5595" top="7740">
+   </BOUNDS>
+   <BOUNDS type="Window" height="13365" left="0" top="2835" width="12480">
+   </BOUNDS>
+   <PIN pinname="Slitscan Content" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="view" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Slitscan" visible="1">
+   </PIN>
+   <PIN pinname="Texture ViewPort Transform" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mesh" visible="1" slicecount="4" values=",,,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="projection" dstnodeid="33" dstpinname="projection">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Cone Content4" dstnodeid="33" dstpinname="Cone Content">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="view4" dstnodeid="33" dstpinname="view">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="33" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="33" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Layers" dstnodeid="31" dstpinname="Layer 5">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Layers" dstnodeid="29" dstpinname="Layer 5">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="34" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3210" top="2325" width="1905" height="285">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3210" top="2325" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer VirtualScene|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Output Node" dstnodeid="20" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output Node" dstnodeid="3" dstpinname="Virtual Scene">
+   </LINK>
+   </PATCH>
